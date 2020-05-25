@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <title>Full Moon Whale</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    #active{
+      color:red;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+
+    .saw {
+      color:gray;
+    }
+    h1{
+      font-size:45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin:0;
+      padding: 20px;
+    }
+    ol{
+      border-right: 1px solid gray;
+      text-align: center;
+      width:100px;
+      margin:00px;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    ol{
+      padding-left: 33px;
+      border-bottom: 1px solid gray;
+    }
+    #article{
+      padding-left: 25px;
+      border-bottom: 1px solid gray;
+    }
+    @media(max-width:800px){
+      #grid{
+        display:block;
+      }
+      ol{
+        border-right:none;
+        border-bottom:none;
+      }
+      h1{
+          border-bottom:none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="https://naver.com">NAVER</a></h1>
+  <div id="grid">
+     <ol>
+      <li><a href="https://www.wikipedia.org/" class="saw">Wikipedia</a></li>
+      <li><a href="http://www.kcllab.com/" class="saw active" id="active">Lab</a></li>
+      <li><a href="https://www.youtube.com/">YouTube</a></li>
+    </ol>
+    <div id="article">
+      <h2>CSS</h2>
+      <p>
+        Cascading Style Sheets (CSS) is a style sheet language used<br>
+        for describing the presentation of a document written in a<br>
+        markup language like HTML.[1] CSS is a cornerstone technology<br>
+        of the World Wide Web, alongside HTML and JavaScript.[2]<br>
+        <img src="image2.jpg" width="450">
+      </p>
+    </div>
+  </div>
+</body>
+</html>
